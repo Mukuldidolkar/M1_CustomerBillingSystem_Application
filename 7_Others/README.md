@@ -1,0 +1,1 @@
+the images of code and the output are shown below

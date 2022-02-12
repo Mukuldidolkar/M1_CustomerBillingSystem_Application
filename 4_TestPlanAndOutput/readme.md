@@ -1,3 +1,1 @@
-for every feature define a test case
-define expected behaviour
-verify the actual result
+The results obtained are shown below in the images
