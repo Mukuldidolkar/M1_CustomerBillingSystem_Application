@@ -38,7 +38,7 @@
 	  printf("   CUSTOMER BILLING SYSTEM:\n\n");
 	  printf("===============================\n");
 	  printf("\n1:    to add account on list\n");
-	  printf("2:    to search customer account\n");
+	  printf("2:    to search the customer account\n");
 	  printf("3:    exit\n");
 	  printf("\n================================\n");
 
