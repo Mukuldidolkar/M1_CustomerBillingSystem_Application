@@ -16,4 +16,4 @@ jobs:
     - name: build
       run: gcc Customer.c file.c Delay.h -o billingsystem.out
     - name: Run
-      run: ./billingsystem.exe
+      run: ./billingsystem.out
