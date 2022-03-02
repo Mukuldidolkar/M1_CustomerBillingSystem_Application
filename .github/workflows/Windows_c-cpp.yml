@@ -1,0 +1,19 @@
+name: Windows C/C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: build
+      run: gcc customer.c -o billingsystem.exe
+    - name: Run
+      run: .\billingsystem.exe
