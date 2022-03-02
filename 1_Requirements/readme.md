@@ -10,8 +10,6 @@ Requirements for the project
   | HR03 | To search the customer account by name 
   | HR04 | to search the customer account by number 
   
-  
-
 # SWOT analysis
 
 #### Strengths- This project has the strength to keep the track record of the customer's data in large numbers
@@ -21,7 +19,6 @@ Requirements for the project
 #### Opportunities- The opportunities Which were identified through this project are that we can do a lot of file handling in the data acquired from the customer
 
 #### Threats- The threats which pertain with this project are that if the security of the system is breached then the valuable data of the consumers may get leaked and hence it can cause a lot of trouble
-
 
 # 4W's & 1H-
 
