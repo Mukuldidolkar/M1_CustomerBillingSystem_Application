@@ -41,19 +41,24 @@
 	  printf("2:    to search customer account\n");
 	  printf("3:    exit\n");
 	  printf("\n================================\n");
-	  do{
+
+	  do
+	  {
 	       printf("\nselect what do you want to do?");
 	       ch=getchar();
-	  }while(ch<='0' || ch>'3');
-	  switch(ch){
+	  } 
+	  while(ch<='0' || ch>'3');
+	  switch(ch)
+	  {
 		case '1':
 			system("clear");
-			printf("\nhow many customer accounts?");
+			printf("\n how many customer accounts : ");
 			scanf("%d",&n);
 			getchar();
-			for(i=0;i<n;i++){
-				
-				if(customer.payment>0)
+			for(i=0;i<n;i++)
+			{
+				input();
+				if(customer.payment > 0.0) 
 					customer.acct_type=(customer.payment<customer.oldbalance)? 'O': 'D';
 				else
 					customer.acct_type=(customer.oldbalance>0)?'D' : 'C';
@@ -64,7 +69,7 @@
 		case '2':
 			getchar();
 			system("clear");
-			printf("search by what?\n");
+			printf("search by what ??\n\n");
 			printf("1 --- search by customer number\n");
 			printf("2 --- search by customer name\n");
 			search();
@@ -75,7 +80,6 @@
 			delay(500);
 			
 			GOTOXY(10,25);
-			printf("\nA PROJECT CREATED BY MUKUL");
 			delay(1500);
 			exit(1);
 	  }
@@ -93,7 +97,7 @@
 	  fread(&customer,sizeof(customer),1,fp);
 	  printf("\ncustomer no:%d\n",++customer.number);
 	  fclose(fp);
-	  printf("         Account number:");
+	  printf("         Account number: ");
 	  scanf("%d",&customer.acct_no);
 	  getchar();
 	  printf("\n       Name:");
@@ -120,14 +124,7 @@
 	  return;
    }
 
-   void writefile()
-   {
-	  FILE *fp;
-	  fp=fopen("file.txt","ab+");
-	  fwrite(&customer,sizeof(customer),1,fp);
-	  fclose(fp);
-	  return;
-   }
+   
 
    void search()
    {
@@ -135,7 +132,7 @@
 	 char nam[100];
 	 int n,i,m=1;
 	 FILE *fp;
-	 fp=fopen("file.txt","ab+");
+	 fp=fopen("file.txt","r+");
 	 do{
 		printf("\nenter your choice:");
 		ch=getchar();
