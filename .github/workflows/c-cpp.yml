@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make Build
-      run:  make Build -c 3_Implementation
+    - name: gcc customer.c file.c delay.h
+      run:  Run billingsystem.exe
     
   
