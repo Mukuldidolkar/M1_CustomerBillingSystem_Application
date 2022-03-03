@@ -1,4 +1,4 @@
-name: Windows C/C++ CI
+name: Linux C/C++ CI
 
 on:
   push:
@@ -9,11 +9,11 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: gcc customer.c -o billingsystem.exe
+      run: gcc hello.c -o hello.out
     - name: Run
-      run: .\billingsystem.exe
+      run: ./hello.out
