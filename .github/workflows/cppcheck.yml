@@ -1,4 +1,4 @@
-name: Build Linux
+name: Cppcheck
 
 on:
   push:
@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make
-      run:  make run -C 3_Implementation
+    - name: Install cppcheck
+      run: sudo apt-get -y install cppcheck
+    - name: cppcheckcode
+      run: cppcheck 3_Implementation/
   
