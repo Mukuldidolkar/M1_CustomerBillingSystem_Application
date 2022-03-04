@@ -16,6 +16,6 @@ jobs:
     - name: apt install dependency
       run: sudo apt-get -y install valgrind
     - name: Dynamic analysis
-      run: make dynamic analysis -C 3_Implementation/src
+      run: make dynamic analysis -C 3_Implementation
     
     
