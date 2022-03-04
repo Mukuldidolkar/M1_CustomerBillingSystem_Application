@@ -21,7 +21,7 @@ jobs:
     - name: customer file
       run: gcc 3_Implementation/src/file.c -c
     - name: project file
-      run: gcc 3_Implementation/customer.c -o bill.exe
+      run: gcc 3_Implementation/src/customer.c -o bill.exe
     - name: run
       run: ./bill.exe
        
