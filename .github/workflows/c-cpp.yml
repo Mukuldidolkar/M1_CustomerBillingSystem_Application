@@ -20,10 +20,10 @@ jobs:
       run: gcc 3_Implementation/Inc/Delay.h -c
     - name: customer file
       run: gcc 3_Implementation/src/file.c -c
-    - name: main
-      run: gcc 3_Implementation/src/customer.c -c
+    - name: project file
+      run: gcc 3_Implementation/src/customer.c -o customer.exe
     - name: run
-      run: ./billingsystem.exe
+      run: ./customer.exe
        
     
     
