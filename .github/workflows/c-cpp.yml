@@ -23,7 +23,7 @@ jobs:
     - name: main
       run: gcc 3_Implementation/src/customer.c -c
     - name: run
-      run: ./billingsystem.exe
+      run: ./customer.exe
        
     
     
