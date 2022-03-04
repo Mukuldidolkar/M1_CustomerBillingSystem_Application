@@ -19,9 +19,9 @@ jobs:
     - name: header
       run: gcc 3_Implementation/src/Delay.h -c
     - name: customer file
-      run: gcc 3_Implementation/src/file.c -c
-    - name: project file
-      run: gcc 3_Implementation/src/customer.c -o bill.exe
+      run: gcc 3_Implementation/src/customer.c -c
+    - name: main
+      run: gcc 3_Implementation/src/main.c -o bill.exe
     - name: run
       run: ./bill.exe
        
