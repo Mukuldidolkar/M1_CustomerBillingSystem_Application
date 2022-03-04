@@ -4,7 +4,7 @@
  #include<stdlib.h>
  #include<time.h>
  void input();
- void writefile();
+ void Writefile();
  void search();
  void output();
 
@@ -63,7 +63,7 @@
 				else
 					customer.acct_type=(customer.oldbalance>0)?'D' : 'C';
 				customer.newbalance=customer.oldbalance - customer.payment;
-				writefile();
+				Writefile();
 			}
 			main();
 		case '2':

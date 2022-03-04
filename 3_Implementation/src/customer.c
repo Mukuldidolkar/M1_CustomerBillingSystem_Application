@@ -1,6 +1,6 @@
  #include<stdio.h>
  char customer[100];
- void writefile()
+ void Writefile();
    {
 	  FILE *fp;
 	  fp=fopen("file.txt","ab+");
