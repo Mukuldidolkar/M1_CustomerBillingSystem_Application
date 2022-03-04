@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: Linux-Build
 
 on:
   push:
@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/checkout@v2
     - name: header
-      run: gcc 3_Implementation/Inc/Delay.h -c
+      run: gcc 3_Implementation/src/Delay.h -c
     - name: customer file
       run: gcc 3_Implementation/src/file.c -c
     - name: project file
