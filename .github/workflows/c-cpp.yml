@@ -13,9 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-     - uses: actions/checkout@v2
-      - uses: actions/checkout@v2
-       - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
     - name: header
       run: gcc 3_Implementation/src/delay.h -c
     - name: customer file
