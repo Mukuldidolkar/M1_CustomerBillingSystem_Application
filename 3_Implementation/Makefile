@@ -1,5 +1,5 @@
-build : customer.c file.c delay.h
-	gcc customer.c file.c delay.h -o bill.out
+build : customer.c main.c Delay.h
+	gcc customer.c main.c Delay.h -o bill.out
 
 run : bill.out
 	./bill.out
