@@ -21,9 +21,9 @@ jobs:
     - name: customer file
       run: gcc 3_Implementation/src/file.c -c
     - name: main
-      run: gcc 3_Implementation/src/customer.c -o customer.exe
+      run: gcc 3_Implementation/src/customer.c -o main.exe
     - name: run
-      run: ./customer.exe
+      run: ./main.exe
        
     
     
