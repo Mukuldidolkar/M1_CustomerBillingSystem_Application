@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: Ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -23,7 +23,7 @@ jobs:
     - name: main
       run: gcc 3_Implementation/src/customer.c -c
     - name: run
-      run: ./customer.exe
+      run: ./billingsystem.exe
        
     
     
