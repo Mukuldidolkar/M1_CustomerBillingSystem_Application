@@ -1,3 +1,13 @@
+ /**
+ * @file main.c
+ * @author Mukul Didolkar
+ * @brief This is the main file of our project Customerbilling system
+ * @version 0.1
+ * @date 2022-02-26
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
  #include"Delay.h"
  #include<stdio.h>
  #include<string.h>
@@ -13,7 +23,10 @@
 	   int day;
 	   int year;
 	   };
-
+/**
+ * @brief this is a structure date where we have integer values like month,day,year
+ * 
+ */
   struct account {
 	int number;
 	char name[100];
@@ -47,6 +60,10 @@
 	       printf("\nselect what do you want to do?");
 	       ch=getchar();
 	  } 
+	  /**
+	   * @brief to ask the customer his/her choice
+	   * 
+	   */
 	  while(ch<='0' || ch>'3');
 	  switch(ch)
 	  {
@@ -191,6 +208,10 @@
 	      }
 	      return;
 	 }
+	 /**
+	  * @brief search for the given choice and ask the customer to search another account yes or no?
+	  * 
+	  */
 
 
 
@@ -225,6 +246,10 @@
 	      
 	      return;
 	   }
+	   /**
+	    * @brief to dispay the output as the status of the account of the customer
+	    * 
+	    */
 
 
 
