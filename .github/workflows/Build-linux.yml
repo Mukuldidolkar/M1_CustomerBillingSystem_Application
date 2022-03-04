@@ -1,0 +1,29 @@
+name: Build-linux
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: Ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    - uses: actions/checkout@v2
+    - name: header
+      run: gcc 3_Implementation/src/Delay.h -c
+    - name: customer file
+      run: gcc 3_Implementation/src/customer.c -c
+    - name: main
+      run: gcc 3_Implementation/src/main.c -o bill.exe
+    - name: run
+      run: ./bill.exe
+       
+    
+    
